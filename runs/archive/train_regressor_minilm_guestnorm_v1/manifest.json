@@ -1,0 +1,19 @@
+{
+  "run": "train_regressor_minilm_guestnorm_v1",
+  "csv": "/Users/matthewatkinson/Apps/shorts-model_v3/data/training-data_v4.xlsx",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "alpha": 1.0,
+  "dim": 384,
+  "device": "mps",
+  "cv": {
+    "folds": 5,
+    "seed": 42,
+    "r2_mean": -0.12450109274864511,
+    "r2_std": 0.17765564416157395,
+    "spearman_mean": 0.25648351648351647,
+    "spearman_std": 0.17306293332611183
+  },
+  "artifacts": {
+    "regressor": "ridge_regressor_guestnorm_v1.pkl"
+  }
+}

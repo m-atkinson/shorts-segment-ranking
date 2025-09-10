@@ -1,0 +1,69 @@
+# use this to run the latest model
+# GuestFeat - this is the top performer
+   /Users/matthewatkinson/Desktop/032425/venv/bin/python -u runs/infer_minilm_v1/infer_minilm_v1.py \
+    --transcript data/transcript_anne-applebaum.txt \
+    --top_k 5 \
+    --target_tokens 220 \
+    --overlap 0.20 \
+    --sim_threshold 0.85 \
+    --model_name sentence-transformers/all-MiniLM-L6-v2 \
+    --regressor_path runs/train_regressor_minilm_guestfeat_v1/ridge_regressor_guestfeat_v1.pkl \
+    --guest "Anne Applebaum"
+  
+
+
+# Train model - this will overwrite current run BTW, so create a copy beforehand
+
+python train_guest_regressor.py --csv data/training-data_v5.csv
+
+
+
+
+
+# GuestNorm
+•  For guestnorm model (ridge_regressor_guestnorm_v1.pkl), also pass --guest:
+•  /Users/matthewatkinson/Desktop/032425/venv/bin/python -u runs/infer_minilm_v1/infer_minilm_v1.py \
+    --transcript data/transcript_anne-applebaum.txt \
+    --top_k 5 \
+    --target_tokens 220 \
+    --overlap 0.20 \
+    --sim_threshold 0.85 \
+    --model_name sentence-transformers/all-MiniLM-L6-v2 \
+    --regressor_path runs/train_regressor_minilm_guestnorm_v1/ridge_regressor_guestnorm_v1.pkl \
+    --guest "Anne Applebaum"
+•  If you omit --guest or the guest is unknown, the code falls back to the global mean stored in the model pickle.
+
+
+
+
+
+/Users/matthewatkinson/Desktop/032425/venv/bin/python runs/infer_minilm_v1/infer_minilm_v1.py \
+  --transcript data/transcript_anne-applebaum.txt \
+  --top_k 5 \
+  --target_tokens 220 \
+  --overlap 0.20 \
+  --sim_threshold 0.85 \
+  --model_name sentence-transformers/all-MiniLM-L6-v2 \
+  --regressor_path runs/train_regressor_minilm_v1/ridge_regressor_v1.pkl
+
+
+
+   /Users/matthewatkinson/Desktop/032425/venv/bin/
+   python runs/infer_minilm_v1/infer_minilm_v1.py \
+   --transcript data/transcript_anne-applebaum.txt \
+   --top_k 5 \
+   --target_tokens 220 \
+   --overlap 0.20 \
+   --sim_threshold 0.85 \
+   --model_name sentence-transformers/all-MiniLM-L6-v2 \
+   --regressor_path runs/train_regressor_minilm_guestfeat_v1/ridge_regressor_guestfeat_v1.pkl
+
+
+   # Tip: if you want to see progress immediately, add -u after python for unbuffered output:
+
+
+
+
+
+
+

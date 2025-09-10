@@ -1,0 +1,89 @@
+workflows:
+  - name: Data prep (guest)
+    tags: [data, guest]
+    command: "{{venv_python}} runs/dataprep_guest_v1/dataprep_guest_v1.py --csv {{dataset}}"
+    arguments:
+      - name: venv_python
+        description: Path to your virtualenv's python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+      - name: dataset
+        description: Training data path (CSV/XLSX/Parquet) with guest column
+        default: "data/training-data_v4.xlsx"
+
+  - name: Train regressor (guest normalization)
+    tags: [train, guest]
+    command: "{{venv_python}} runs/train_regressor_minilm_guestnorm_v1/train_regressor_minilm_guestnorm_v1.py --csv {{dataset}}"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+      - name: dataset
+        default: "data/training-data_v4.xlsx"
+
+  - name: Train regressor (guest feature)
+    tags: [train, guest]
+    command: "{{venv_python}} runs/train_regressor_minilm_guestfeat_v1/train_regressor_minilm_guestfeat_v1.py --csv {{dataset}}"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+      - name: dataset
+        default: "data/training-data_v4.xlsx"
+
+  - name: Train regressor (MiniLM v3 baseline)
+    tags: [train, baseline]
+    command: "{{venv_python}} runs/train_regressor_minilm_v3/train_regressor_minilm_v3.py"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+
+  - name: Train regressor (MiniLM v2 baseline)
+    tags: [train, baseline]
+    command: "{{venv_python}} runs/train_regressor_minilm_v2/train_regressor_minilm_v2.py"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+
+  - name: Benchmark embeddings v3
+    tags: [benchmark]
+    command: "{{venv_python}} runs/benchmark_embeddings_v3/benchmark_embeddings_v3.py"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+
+  - name: Benchmark embeddings v2
+    tags: [benchmark]
+    command: "{{venv_python}} runs/benchmark_embeddings_v2/benchmark_embeddings_v2.py"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+
+  - name: Benchmark embeddings v1
+    tags: [benchmark]
+    command: "{{venv_python}} runs/benchmark_embeddings_v1/benchmark_embeddings_v1.py"
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+
+  - name: Infer (baseline or guest-aware)
+    tags: [infer]
+    command: "{{venv_python}} runs/infer_minilm_v1/infer_minilm_v1.py --transcript {{transcript}} --top_k {{top_k}} --target_tokens {{target_tokens}} --overlap {{overlap}} --sim_threshold {{sim_threshold}} --model_name {{model_name}} --regressor_path {{regressor_path}} --guest \"{{guest}}\""
+    arguments:
+      - name: venv_python
+        default: "/Users/matthewatkinson/Desktop/032425/venv/bin/python"
+      - name: transcript
+        default: "data/transcript_anne-applebaum.txt"
+      - name: top_k
+        default: "5"
+      - name: target_tokens
+        default: "220"
+      - name: overlap
+        default: "0.20"
+      - name: sim_threshold
+        default: "0.85"
+      - name: model_name
+        default: "sentence-transformers/all-MiniLM-L6-v2"
+      - name: regressor_path
+        default: "runs/train_regressor_minilm_v3/ridge_regressor_v3.pkl"
+      - name: guest
+        description: Optional guest name (used for guest-aware models)
+        default: ""
+

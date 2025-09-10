@@ -1,0 +1,22 @@
+# Embedding configuration v1
+# Feedback applied:
+# - Longform chunking/embedding is disabled for now
+# - Output goes directly under data/
+
+model: BAAI/bge-base-en-v1.5
+model_dim: 768
+pooling: mean
+max_seq_len: 512
+batch_size: 128
+dtype: float32
+seed: 42
+
+# Input/output
+train_csv: data/training-data.csv
+output_parquet_template: data/shorts_embeddings_{model_slug}_{dim}_v1.parquet
+
+# Quick sanity check settings
+cv_folds: 5
+ridge_alpha: 1.0
+normalize_embeddings: false
+

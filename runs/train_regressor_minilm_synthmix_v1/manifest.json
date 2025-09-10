@@ -1,0 +1,24 @@
+{
+  "run": "train_regressor_minilm_synthmix_v1",
+  "real_parquet": "runs/datasets/training_data_v4_cleaned.parquet",
+  "synth_parquet": "runs/synthdata_v1/synth_batch_008_training_format.parquet",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_dim": 384,
+  "alpha": 1.0,
+  "device": "mps",
+  "seed": 42,
+  "synth_weight": 0.5,
+  "samples": {
+    "total": 78,
+    "real": 68,
+    "synth": 10
+  },
+  "cv": {
+    "folds": 5,
+    "r2_mean": -0.014919617823545516,
+    "r2_std": 0.20952794936818747,
+    "spearman_mean": 0.31555251363611536,
+    "spearman_std": 0.15335395136930993
+  },
+  "artifact": "ridge_regressor_synthmix_v1.pkl"
+}

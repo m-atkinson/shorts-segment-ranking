@@ -1,0 +1,52 @@
+# OS/Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Build/Dist
+build/
+dist/
+site/
+.coverage
+htmlcov/
+
+# Node (if any)
+node_modules/
+
+# Project-specific: ignore large/generated artifacts under runs/
+runs/**/*.parquet
+runs/**/*.csv
+runs/**/*.pkl
+runs/**/*.jsonl
+
+# Allow scripts and reports under runs/
+!runs/**/*.py
+!runs/**/*.md
+!runs/**/workflows.yaml
+
+# HuggingFace/Transformers caches (if any)
+.huggingface/
+transformers_cache/
+
+# Local configuration overrides
+*.local.*
+

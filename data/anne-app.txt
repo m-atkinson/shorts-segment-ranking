@@ -1,0 +1,677 @@
+
+  - speaker: Bill Kristol
+    text: |
+      Hi, I’m Bill Kristol. Welcome back to Conversations . I’m very pleased to be joined today for the
+      third time, I guess, by Anne Applebaum, preeminent chronicler of all things Soviet, Russian,
+      Ukrainian, European and American now, in terms of authoritarianism here as well. So unfortunately,
+      the authoritarian beat has turned out to be a very good beat to be on Anne, so.
+  - speaker: Anne Applebaum
+    text: |
+      Unfortunately, yes.
+  - speaker: Bill Kristol
+    text: |
+      Yeah, but you’ve done a great job with it. Your book, Autocracy, Inc. is coming out in about a
+      month, and we’ll talk about that some, but we’ve had two conversations about Ukraine right at the
+      beginning of the war—a month in—and then a year in, we’re now two years plus in. Let’s begin with
+      that and then get to Europe and then the broader questions. Where do we stand in Ukraine?
+  - speaker: Anne Applebaum
+    text: |
+      So it’s a complicated picture to describe because there actually, instead of one war, there are now
+      three wars. There is the Land War, which is the thing you read about the most. And in the Land War,
+      Ukraine is very much still on the defensive. It’s true that the Russian attempt to push towards
+      Kharkiv has mostly stopped. The Ukrainians, thanks really to the last-minute arrival of US aid, the
+      Ukrainians have been able to stop the Russians, so they have not succeeded in taking huge amounts of
+      territory, but they did make some gains while Congress was stalling. But they’ve stopped it, but
+      they’re not moving forward and it looks muddled, although there are people who are trying to find a
+      way out of that. But that’s a separate story. There’s a second war, which is taking place in the
+      Black Sea, and this is mostly Ukrainians using long-range missiles, drones, to attack Crimea and
+      targets in and around Crimea. And they’re hitting airfield and they’re hitting air defense and
+      they’ve hit enough ships so that the Russian Black Sea Fleet is mostly moved away from Ukraine,
+      which has allowed Ukrainian shipping to resume normally. It looks like the Ukrainians are trying to
+      make Crimea unviable so that it would be difficult to live there. It’s already much harder to get
+      goods in and out of there. Crimea was functioning for a lot of the war as a kind of aircraft carrier
+      stuck to the bottom of Ukraine. It was where all the Russian equipment was. It was where actually
+      all the prisoners, where a lot of prisons for Ukrainian soldiers were, and it’s now— they’re trying
+      to weaken it and cut it off and that’s the kind of second battlefield. And then there’s a third
+      thing happening, which is very hard to understand because we don’t really have any good reporting on
+      it. And this is almost like a long-range duel. So there’s the Russians trying to hit Ukrainian power
+      plants, Ukrainian infrastructure, and basically the Ukrainians trying to hit Russian infrastructure
+      and especially Russian oil refining capacity. And it looks like they’ve— depending on who you read
+      and who you believe, something between 7 and 10% of Russian oil refining capacity is down. So it’s
+      almost like there are these three spheres of the war. And Ukraine is doing not so well in the first,
+      much better in the second and the third is a kind of ongoing duel. I mean, one of the interesting
+      things is there’s now a real arms race there. What’s happening on the battleground in Ukraine is now
+      so far ahead of anything the US army has ever done in terms of the use of drones and electronic
+      warfare that I hope, I mean, I’m sure everybody in the Pentagon is paying attention. I don’t mean to
+      be annoying, but I mean isn’t a kind of war that we have fought, and it’s at the cutting edge of
+      technology. The whole battlefield is visible. You can see everything because of drones, and there’s
+      a contest between whose electronic warfare can ban who else’s drones and other guided capabilities.
+      And that’s what’s going on now. And there’s enormous amount of research and innovation happening on
+      the Ukrainian side, but there’s also some happening on the Russian side. And so we’re now in this
+      kind of duel moment. The US aid has come through, it’s begun to get to the battlefield. It’s still,
+      some of it seems to be weirdly slow for reasons that I am not able to understand. But Ukraine has
+      recovered from the very low point of three or so months ago when they didn’t have the prospects of
+      war aid and they were really beginning to lose ground. So I would say on the ground, that’s where we
+      are.
+  - speaker: Bill Kristol
+    text: |
+      I suppose for all these reasons, including the new uses of technology or the new technologies, it’s
+      a little unpredictable actually, if things might break in one direction or another, but I guess, am
+      I right that the safer prediction or assumption is not huge changes in the balance of power or
+      balance of forces on the ground over the next several months?
+  - speaker: Anne Applebaum
+    text: |
+      So people are thinking that not much will change this year. The key event, of course, is the US
+      election in November, and it’s possible that different decisions will be made depending on who wins
+      that. And then most think that by next year, the cost to the Russian economy, which is being paid in
+      other ways too, will begin to become high enough that Putin will have to start thinking about how
+      long he wants to keep this going. The Ukrainians will keep it going because they don’t have a
+      choice. So as far as they’re concerned, it’s an existential war. I mean, they have to fight because
+      when they lose territory, the territory becomes Russian. The people living on it are put in
+      concentration camps. I mean, there’s a horrific story that came out in the FT, in the Financial
+      Times in the last few days, describing how the Russian plan to kidnap Ukrainian children, bring them
+      to Russia, Russify them and put them up for adoption, was actually created before the war. And the
+      FT actually found advertisements, I mean essentially offering Ukrainian children up for adoption
+      inside Russia. So they will lose their children, they will lose their identity, they will lose their
+      way of life. They’ll probably lose their businesses because Russia nationalizes whatever businesses
+      it finds in occupied territory. So for them, an occupation is the imposition of a totalitarian
+      regime, and they can’t live there, it will be the end. So they will keep fighting. And for Russia,
+      it remains a war of choice. I mean, it remains something they don’t have to do. It’s a war that’s
+      being fought largely now for the sake of Putin’s ego and for both his belief in some recreation of
+      some kind of Russian Empire, but also it’s his battle against the idea of democracy and the idea
+      that a country like Ukraine can choose what kind of government it wants to have. And so there could
+      come a point when he doesn’t want to do it anymore. I mean, there’s another additional piece of
+      this, which is this war is over when the Russians leave, and it doesn’t matter why they leave, they
+      can leave because they lost a battle. They can leave because they are tired. They can leave for
+      economic reasons. And one of the things that’s actually happening as we’re speaking is that the G7
+      is meeting, and at the G7, there are going to be a number of things announced. Some have already
+      been leaked, that will increase pressure on Russia. So there will be money that was Russian assets
+      that were frozen at the beginning of the war. The interest from those assets is going to be used
+      essentially to give $50 billion to Ukraine. Also, there’s new sanctions on not just Russian
+      companies, but companies that are enabling Russian companies to get around sanctions, especially
+      concerning the rebuilding of their military industrial complex. And so their economic pressure is
+      being tightened as well.
+  - speaker: Bill Kristol
+    text: |
+      Yeah, it seems like there’s some kind of financial or banking crisis actually in Russia the last 24,
+      48 hours with the people waiting on lock, can’t get their money out of the banks and so forth
+      because of the new sanctions, I think.
+  - speaker: Anne Applebaum
+    text: |
+      Yeah, a whole new list of banks has been sanctioned. Any financial institutions that enable the
+      Russians to get around export controls, and this is not just Russian banks, by the way, any of those
+      are now sanctioned as well. So this is a sort of huge wave of secondary sanctions, which is exactly
+      the thing that people have been saying have been missing. I mean, we’ve seen now the way around
+      sanctions has gone via third countries, via Turkey, via Georgia, via Kazakhstan, by Kyrgyzstan. And
+      of course, the Chinese have been sending components, chips, all kinds of equipment and machine tools
+      that the Russians need to build weapons have also been coming from China, and I think the US is now
+      sanctioning that trade as well. And it will at least have a ripple effect. I mean, I think the hope
+      is not that we can shut it down completely, but that we can weaken it, we can make it more
+      difficult, we can make it more expensive.
+  - speaker: Bill Kristol
+    text: |
+      I think the net effect of what you’ve said is really important— that everyone assumes, based on
+      history back to Napoleon, The Russians can outlast anyone. They’ve got more people, obviously, and
+      they’re in Ukrainian territory, so they can just sit there and so forth. But actually, it’s not
+      clear that they can actually simply outlast Ukraine. You say it’s a world necessity for Ukraine, and
+      things could change in Russia in terms of either Putin or in terms of the economy. And there are
+      other things, and people tend to, I think here, don’t you think much too much to assume that
+      Russia’s the one that’s got just the endless lasting staying power and that it’s Ukraine?
+  - speaker: Anne Applebaum
+    text: |
+      The Russians do lose wars, yeah. I mean, they lost the war in Afghanistan. They withdrew. They lost
+      the Russo-Japanese War. I mean, they essentially lost World War I. They lose wars. I mean, it’s not
+      at all unheard of. And there are different kinds of pressure being brought to bear on them. I mean,
+      another thing that often comes up is people say, why don’t the Ukrainians negotiate? And an
+      important point here is that at the moment, the Russians don’t want to negotiate. So there is no
+      other path right now. So there isn’t anyone… I imagine we could put pressure on the Ukrainians to
+      convince them to negotiate. I mean, we have a lot of leverage on them, but they have no one to
+      negotiate with. I don’t think the Russians are negotiating about anything until they have concluded
+      that they can’t win. And so whatever kind of pressure we can put in them to convince them that we
+      can’t win, that we’re there forever, that we’re not going to abandon the Ukrainians, whatever. I
+      mean, and of course the big wild card here is Trump. We don’t really know what he would do if he
+      won. He’s given lots of pretty negative hints, and the Russians may be waiting for him to win or
+      hoping he’ll win. And presumably they’re going to try and help him win in various ways in order to…
+      And maybe they think then they can get some kind of better deal. I don’t know, but that’s what I
+      assume.
+  - speaker: Bill Kristol
+    text: |
+      No, that’s a huge one, we’ll come back to that in a minute. But so when you dig into any of these
+      issues, whether it’s Russia, Ukraine, Europe, which we’ll get to in a second too, or autocracy
+      around the world, Trump is kind of a central figure. But bracketing that for Trump for a second, am
+      I right to think that all and all the sort of, let’s call it diplomatic/political situation in
+      Europe, and I guess now here in a way, after the package has gone through, isn’t as bad as one might
+      have feared a year ago in terms of for Ukraine, that we could all complain about different things
+      European countries aren’t doing and hesitations and stuff. But at the end of the day, most of the
+      countries are more solid maybe than we might’ve thought they would be two years ago. Am I too
+      optimistic about that?
+  - speaker: Anne Applebaum
+    text: |
+      No, actually, I mean, with the important exception of Hungary, all of the European countries remain
+      aligned behind Ukraine. I mean, some have more or less capabilities, but there has been an
+      understanding. And I think the majority, I can’t speak to every single country in Europe. I haven’t
+      looked at 27 different sets of opinion polls. But I know that overall support for Ukraine remains. I
+      mean, of course people are tired of the war, just like everybody’s tired. The Ukrainians are tired
+      of the war. But there is also an understanding, I mean, especially in the frontline states, which I
+      would include Eastern Europe and Scandinavia, there’s an understanding that it still— for them, it’s
+      also existential that we need to win the war for our own safety. But I think even in Germany, the
+      majority of people understand that. A lot of people understand it even in France and Italy, which
+      are further away. The British absolutely understand it. So I’m kind of less worried right now
+      despite the European elections, which I’m sure you want to talk about. I mean, despite that, I’m not
+      worried at this second about some big, huge split in the alliance provoked by Europe.
+  - speaker: Bill Kristol
+    text: |
+      So we have a November problem perhaps with Trump and a problem already. I think in terms of the
+      shadow he’s casting and people have to calculate that he has a whatever, 40, 50% chance of winning.
+      And that affects government’s own calculations, including Putin’s, as you said. But, what—
+  - speaker: Anne Applebaum
+    text: |
+      Yeah, no, I mean, Europeans are certainly… I mean, I know there are plans in lots of countries.
+      There’s a conversation about what we do if Trump wins. And I think even the coming NATO summit in
+      the summer there will put into place some institutional structures that will be designed to help
+      Ukraine, like a civilian NATO presence in Ukraine and a kind of pipeline for weapons and training
+      and so on that will be put in place so that it can outlast even a Trump presidency. I mean, that’s
+      the idea.
+  - speaker: Bill Kristol
+    text: |
+      Tough though, I think. The US is so much at the center of it.
+  - speaker: Anne Applebaum
+    text: |
+      Tough, I agree. No, no, it’s tough. Not going to deny that.
+  - speaker: Bill Kristol
+    text: |
+      Yeah, no, I mean this is where… So European elections, I don’t know, some people say dramatic move
+      to the right. Others say—you’ve, I think written—much more complicated. Some people even point out
+      that most countries not that much of a move to the right. But, as you say, without going through
+      necessarily all 27 countries, give us a general sense of the voting last weekend and also maybe what
+      the big takeaways are in terms of implications for the future.
+  - speaker: Anne Applebaum
+    text: |
+      So to be clear, I mean the European parliamentary elections, which are very, very badly understood
+      in the Anglophone world are… it’s like the World Cup for politics nerds. There’s 27 countries, each
+      country has five or six parties center right, center left, far right, far left, green, liberal,
+      whatever. And of course, American and British newspapers in particular, the British also never
+      really understood the European Parliament even when they were in it and they really don’t get it
+      now, they all want one headline. And on Monday after the Sunday vote, the headline was, Victory for
+      the Far-Right. And although it’s true that in France, the far-right, Marine Le Pen’s party got 30%,
+      which counts as a victory in that system. And although the Alliance for Germany, the AFD did very
+      well in Germany, although less well than expected, that kind of… However, almost everywhere else… I
+      mean I think it did well in Austria too, sorry. But almost everywhere else, they either
+      underperformed, they did worse than expected. Anyway, they certainly didn’t win. So whether you look
+      at Spain, whether you look at Poland—
+  - speaker: Bill Kristol
+    text: |
+      They being the far-right parties.
+  - speaker: Anne Applebaum
+    text: |
+      The far-right, yeah. So far-right did very badly in Scandinavia, less than expected in Spain. And
+      actually the center-left revived itself in several places. I mean, this is really in the weeds, but
+      Slovakia, which is a country where there’s a sort of wacky populist government, that ruling party
+      lost these elections actually and the center-left did better. In Poland the current ruling party,
+      which is a center-right party defeated the far-right former ruling party for the first time in 10
+      years. So there was pretty mixed picture. I mean, I think what happened really on Monday was that
+      the French somehow clogged all the attention because Marine Le Pen’s far-right party got, as I said,
+      that 30%, which was—
+  - speaker: Bill Kristol
+    text: |
+      And Macron dissolving Parliament puts the exclamation point on it—
+  - speaker: Anne Applebaum
+    text: |
+      And I was just going to say, exactly, and then Macron decided to use the moment to call everybody’s
+      bluff and to announce a national election. So to be clear, European parliamentary elections are for
+      the European Parliament, which is a thing that sits in Brussels, and it doesn’t usually affect
+      national governments. So you’re not voting for your own prime minister, you’re voting for the
+      European Parliament, which is more important than you think it is. But nevertheless. What Macron
+      decided to do was call everybody’s bluff because he reckons that many people use the EU elections as
+      a kind of protest vote, and people vote for all kinds of parties they don’t vote for nationally. So
+      he’s guessing, first of all, that people won’t vote in the same numbers for Le Pen if it’s to make
+      her prime minister. Secondly, he’s guessing that there’s a slightly different voting process. Votes
+      are counted differently in national elections, which doesn’t favor her as much. And thirdly, even if
+      he’s wrong and she wins and her party is the largest party, which again wouldn’t be a majority,
+      they’d still need to be in a coalition and so on, he’s the president for the next three years. And
+      in France, the president controls foreign and defense policy and is perfectly capable of making the
+      prime minister’s life miserable. I mean, he can make it very difficult for her to do anything, even
+      if she wins. It was a gamble, but it was a more controlled gamble than it looks.
+  - speaker: Bill Kristol
+    text: |
+      I think psychologically, the effects, don’t you think of a Le Pen party governing even only in
+      domestic policy and not all of domestic policy in France would be a pretty… It’s France, that would
+      be a pretty big deal. I mean, it would…
+  - speaker: Anne Applebaum
+    text: |
+      It would be a big deal. So that people understand. I mean, her party, it was originally her father’s
+      party and it does kind of ideologically descend from Vichy, and it was historically an anti-liberal,
+      essentially an anti-democratic party. So there is a normal center in France, or usually there is,
+      it’s kind of in bad shape right now. But the far right was against the Republic. It was against the
+      idea of liberal democracy historically, and that was why it was so dangerous. And then it also was
+      originally her father was openly anti-Semitic, she dropped that and became anti-immigrant, anti-
+      Muslim. Much more recently though, she’s really tried to recast her image. She’s tried to make
+      herself seem like a kind of nice grandmother who only has the interest of the French people at
+      heart, and she looks even more soft-focused photographs and stuff like that. We haven’t talked about
+      Italy was kind of an exception. Hungary is an exception, which we can talk about if you want, but—
+  - speaker: Bill Kristol
+    text: |
+      Yeah, say more.
+  - speaker: Anne Applebaum
+    text: |
+      Giorgia Meloni, whose party also descends from it is the post-fascist party, it was Mussolini’s
+      party, then it changed its name several times. She did something very similar. She recast it as a
+      party of working families. Neither Le Pen nor Meloni are now anti-European. They’re not anti-NATO,
+      at least not openly or aggressively. They talk about keeping France, inside institutions, so they
+      are—
+  - speaker: Bill Kristol
+    text: |
+      And Meloni’s been good on Ukraine, right?
+  - speaker: Anne Applebaum
+    text: |
+      Meloni’s been very good on Ukraine. I mean, again, a little bit like Le Pen. I wonder if push came
+      to shove if Trump were president said, right, we’re not helping any Ukraine anymore. She might jump
+      on that bandwagon too. But for a variety of domestic reasons, she wants to seem centrist, so she
+      wants to be photographed with the other leaders of the Western world. Actually, the G7 is in Italy
+      this week, and she wants to be seen as a kind of normal centrist leader of part of the western
+      alliance because that’s very good for her at home. One of her rivals, another Italian, far-right
+      party, the Salvini’s party has been much more pro-Russian, probably took money from Russia and has
+      been much more anti-Ukraine. So she’s separated herself from them by doing this. I mean, she may
+      well wind up being the prime minister who follows the autocratic path by putting pressure on the
+      judiciary and on the media and so on. I mean, there’s some uglier stories coming from inside Italy,
+      but it’s true that to the outside world she has stayed very much within the traditional European
+      institutions and the transatlantic Alliance.
+  - speaker: Bill Kristol
+    text: |
+      It is striking when you talk about Italy, which or other places too, or even Le Pen and if she’s in
+      a coalition and now the center right party says they’re willing to be in a coalition with her or
+      some of them, but others aren’t. And I mean, one doesn’t know whether to think this is bad, they’re
+      normalizing pretty nasty authoritarianism and stuff that’s barely beneath the surface, and that’s
+      making progress by being in alliance in some cases with more traditional democratic parties. Or the
+      opposite, they’re sort of being detained and domesticated and they have unsavory roots and maybe
+      still some of those instincts. But at the end of the day, they kind of become part of the broader
+      democratic alliance. I mean, this is where authoritarianism isn’t always totally black or totally
+      white, right? It’s complicated.
+  - speaker: Anne Applebaum
+    text: |
+      It’s complicated in each of these countries. Each of these parties is— I’m being very general, so
+      each of these parties is slightly different history.
+  - speaker: Bill Kristol
+    text: |
+      No, no. It’s good.
+  - speaker: Anne Applebaum
+    text: |
+      They have a different history and maybe their different judgments are going to be made. I mean, it
+      seems to me, for example, the German far right is so clearly a partial creation of Russia. I mean,
+      so many of their MPs have links to Russia. They’re clearly supported by and backed by Russian-
+      aligned propagandists online. You can pretty much see what they’re doing. I mean, the Le Pen’s party
+      is more complicated. It’s actually been part of the French political scene for 50 years. It’s not
+      like it’s something totally new. And they’re almost like part of the establishment. They’ve been
+      around for so long. So there’s some nuances and differences between—
+  - speaker: Bill Kristol
+    text: |
+      I guess I would say, which of these do you think is truer, or maybe, obviously they both could be
+      true, that we should be worried by just increasing Russian penetration, increasing authoritarianism,
+      increasing normalization of all that. Or in some ways, the system is kind of handling some of this
+      and people want to, as you said about in Italy, they want to be respectable. So there’s a sort of a
+      bit of a counterforce as well. I don’t know, what…
+  - speaker: Anne Applebaum
+    text: |
+      So I mean, I do think it’s the case that the European Union, and to some extent NATO, although the
+      EU is more important, has a centralizing effect that seems to affect everybody. And I think that’s
+      good.
+  - speaker: Bill Kristol
+    text: |
+      Centralizing as in political sense?
+  - speaker: Anne Applebaum
+    text: |
+      Politically centralizing, sorry, not administratively centralizing. I mean, people complain about
+      that too, but that’s less than people think. And also the threat of Russia, which has made some
+      people genuinely afraid of that war, has pushed people together in a way. So I don’t want to make a
+      judgment yet about either about Meloni or, I mean, Le Pen has said very ugly things in the past and
+      was very clearly pro-Russian in the past, and very clearly, by the way, very anti-American. The
+      French have this thing about Anglo-American capitalism and how it’s destroying their country kind of
+      thing. She was very clear about disliking Americans, disliking the British, wanting a France of
+      closed borders and cut off from the world. She’s, again, moderated a lot of that rhetoric. I’m not
+      convinced that she’s dropped it altogether, but in each one of these cases, I think the real
+      judgment is not about even what they say, it’s what they do. And if they become autocratic parties,
+      if they begin to assault institutions of the state when they’re in power, that’s really the moment
+      to ring alarm bells. I mean, Viktor Orban’s party in Hungary was not originally a far right party.
+      It was a liberal party, and then it kind of slowly drifted. And then what made it dangerous wasn’t
+      its stated ideology, but its behavior. It just began to behave like… I mean, if you look at what
+      Orban did in Hungary and what Hugo Chavez did in Venezuela, there are a lot of similarities. It was
+      about capturing the institutions of the state and manipulating them and so on. I mean, Hungary is
+      quite a poor country, and maybe Orban now needs Russian and Chinese money to keep it going. I mean,
+      he did a lot of damage.
+  - speaker: Bill Kristol
+    text: |
+      Russia and China can make some of these things happen or encourage them to happen or reward people
+      who make them happen—
+  - speaker: Anne Applebaum
+    text: |
+      Yeah, so this is—
+  - speaker: Bill Kristol
+    text: |
+      …and also cause crises or, again, help cause crises, migration crises, or other things that would
+      have strengthened those forces, right?
+  - speaker: Anne Applebaum
+    text: |
+      Yeah, that’s a really interesting piece of the story, actually. So yes, you’re right. And this is
+      one of the themes of my book that’s coming out in July. I mean, so Russia and China and increasingly
+      Iran and others now do cooperate both in terms of the kind of propaganda they put out or support all
+      across Europe as well as North America and the rest of the world. But they also have cooperated in
+      causing crises. And you’re right, there have been a number of provoked migrant crises. So I mean, I
+      actually think the war in Syria was partly designed to send refugees to Europe, more recently on the
+      Polish border and as well as Finnish border, and it’s happened in some of the Baltic states too.
+      We’ve seen what look like organized groups of migrants who have been brought to the border for this
+      purpose, who then try to run across the border in order to scare border guards or create a scene or
+      create a trigger or a political crisis. I mean, I’m saying it looks like it’s deliberately created,
+      but actually there’s no doubt about it. I mean, these are politically created migrant crises. And
+      actually in Poland very recently, a migrant stabbed a border guard and killed him. And that also
+      looks like part of a game designed to create a provocation and a crisis. So Russia is now openly
+      looking for ways to manipulate the European debate to increase and encourage extremism and anger and
+      division and so on. So yes, the Russians play a role in… Even those far-right parties that have
+      tried to style themselves as more centrist, I mean, there’s no question, some of them are benefiting
+      from Russian propaganda and Russian, I would call, political sabotage.
+  - speaker: Bill Kristol
+    text: |
+      And that seems more, I mean, they’ve always used economic power, and the Chinese obviously have been
+      doing this for quite a while. But well talk about what you talk about in the book. I mean, the
+      degree to which these dictators now are much more self con— or well, don’t want to put words in your
+      mouth, but are they more self-consciously and more aggressively, you might almost say, pushing
+      authoritarianism and autocracy around the world?
+  - speaker: Anne Applebaum
+    text: |
+      Absolutely. I mean, the interesting thing is we’re talking about countries that do not share
+      ideology. So communist China, nationalist Russia, theocratic Iran, Bolivarian socialist, Venezuela,
+      whatever North Korea is, these aren’t countries that share an ideology or meet in some secret room
+      where they design things. It’s not like a James Bond movie. But they do share a common interest. And
+      the common interest is undermining us, and us, I mean America, Europe, the liberal world, the
+      democratic world, both because their own oppositions, whether it’s the Hong Kong democracy movement,
+      or whether it’s the Navalny movement in Russia, or whether it’s the women’s movement in Iran, are
+      inspired by and use democratic language. And they use the language of freedom and liberty and rights
+      and rule of law. And they need to undermine that language in order to keep in power domestically and
+      because chaos and uncertainty offer them business opportunities in the Western world. So a lot of
+      these are very, very rich people. That makes them also, by the way, very different from autocrats of
+      the previous century. They’re very wealthy. Their friends are very wealthy. They like having places
+      to hide their money in Europe. They like to have friends inside European politics who can make sure
+      they’re still able to buy whatever it is, houses in France or on Lake Como. And so they have an
+      interest in shaping the debate inside the liberal democracies in ways that benefit them. And
+      increasingly, they’ve concluded that what benefits them is the rise of illiberal, disruptive and
+      radical parties, because when that happens, the Western world or the democratic world loses its
+      sense of community and solidarity. It loses its ability to make group decisions. If we’re divided by
+      radical politics in different countries, then we’re not very good at standing up to them. And they
+      very much see this as a war, as a competition, as a conflict, even if we don’t. So I would say most
+      people who live in New York or Paris or Madrid don’t really think about Putin in the morning, and
+      they don’t really care about him, and they don’t think they’re in competition with him. But he
+      thinks he’s in competition with them. Somebody quoted to me, this may be a made-up Lenin quote, it
+      may not be real quote, “You may not be interested in the dialectic, but the dialectic is interested
+      in you.” I mean, it’s—
+  - speaker: Bill Kristol
+    text: |
+      Yeah, there are versions of that quote. You may not be interested in war, I think Trotsky truly said
+      it.
+  - speaker: Anne Applebaum
+    text: |
+      Maybe Trotsky said it.
+  - speaker: Bill Kristol
+    text: |
+      “You may not be interested in war, but war is interested in you,” or something like that.
+  - speaker: Anne Applebaum
+    text: |
+      Right, exactly.
+  - speaker: Bill Kristol
+    text: |
+      There are different versions of this. Yeah, yeah.
+  - speaker: Anne Applebaum
+    text: |
+      Some version of that. And that’s still true today. You might not care about them, and you don’t
+      really care what goes on inside Russia or inside China, but they care about you and they care about
+      your society. And they’re looking at ways to manipulate the political debate, to compete with us in
+      different spheres around the world, whether it’s in Africa or in Asia or in Latin America, or
+      whether it’s economically. And they care about it and they think about it as a contest and a
+      competition against us and our language and our ideas. And so it is getting to be time for us to
+      understand that we are in a competition even if we don’t want to be there.
+  - speaker: Bill Kristol
+    text: |
+      So how are we doing on that? Autocracy, Inc. is pretty self-conscious now and pretty well organized,
+      I guess, as these things go. “Liberal Democracy Inc.?” How is Liberal Democracy Inc. doing?
+  - speaker: Anne Applebaum
+    text: |
+      The coalition that was created around Ukraine is a kind of start. We’re beginning to think at least
+      in terms of military competition. What we don’t yet have is a clear idea either about information
+      policy, about how… We’ve allowed social media, and especially TikTok, by the way, to divide our
+      populations. We haven’t thought about how to, and I’m not talking about censoring it, I’m talking
+      about how algorithms are regulated and so on. We haven’t tackled that. We also haven’t really
+      tackled kleptocracy and the ways in which our financial system and institutions are used to hide
+      money and enable the leaders of the autocratic world to steal money from their nations and enrich
+      themselves. And I think in both of those two areas, we could do a lot better. A lot better.
+  - speaker: Bill Kristol
+    text: |
+      And in terms of public awareness, public opinion, public leadership in the democracies?
+  - speaker: Anne Applebaum
+    text: |
+      It varies a little from country to country. I think in the US it’s still pretty low. I mean, Biden
+      has tried to talk about democracy and autocracy, but I don’t think in a very convincing way. It’s
+      more than just, well, let me just back up and say part of the difficulty is that it’s not like there
+      are these two geographic blocks and there’s a Berlin Wall that divides them. In fact, there are
+      different actors on both sides, and we have autocratic actors inside the United States, and there
+      are democratic actors inside Russia. And you have to think of it more, it’s not a Cold War. I
+      actually very much dislike this Cold War 2.0 language.
+  - speaker: Bill Kristol
+    text: |
+      I totally agree with you on this.
+  - speaker: Anne Applebaum
+    text: |
+      I completely dislike it.
+  - speaker: Bill Kristol
+    text: |
+      It’s very misleading.
+  - speaker: Anne Applebaum
+    text: |
+      It’s very misleading. It’s not about just lining up all our ducks on one side and shooting at the
+      other side. It’s not going to be like that. A lot of fighting the war is going to be about internal
+      reform, making our system more resilient, and doing so together with other allies in Europe, in
+      Asia, and even working with democratic movements in other places, in Russia, in Iran and China and
+      so on. And so beginning to think like that, I think we’re still really just at the beginning.
+  - speaker: Bill Kristol
+    text: |
+      Yeah, I saw a couple of very impressive young people—youngish people, young by my standards—from
+      Georgia, the country of Georgia, yesterday, here in Washington. They’re dissidents, they’re in the
+      opposition. They’re trying to help [inaudible] those rallies that we’ve seen there. And it seems to
+      me that they’re getting very little help and support from the US government, much less than they
+      should, but also even from civil society and pro-democracy organizations even, in the US, which
+      we’re just not used to. We’re used to dealing with dissidents in a few countries. Obviously China,
+      very famous, Russia, but we’re not used to routinely understanding that we have a big interest in
+      Georgia, which is a small country, but which was the canary in the mine, obviously in 2008, and kind
+      of remains, I think, important in all kinds of ways in addition to just the moral case they have.
+  - speaker: Anne Applebaum
+    text: |
+      Well, Georgia is the kind—
+  - speaker: Bill Kristol
+    text: |
+      So I mean, it’s just interesting to me when they give their account of meeting with people even in
+      think tanks and in NGOs and sympathetic people, I mean, still, there’s not a sense of, yes, it’s not
+      as big a front as Ukraine, obviously, but that’s another front in the war. As you say, it’s not
+      geographical, quite. The government has moved in the last X number of years in Georgia itself, sort
+      of to the other side, right? Anyway, it just struck me as—
+  - speaker: Anne Applebaum
+    text: |
+      Actually, what happened in Georgia is not unlike what happened in Hungary. I mean, you had a
+      political party, and in their case, it involves a single oligarch who owns, I can’t remember the
+      number, but something like a fifth or a quarter of the economy is what he’s worth, who have
+      successfully captured the state. They manipulate elections, they manipulate the media, and he is
+      essentially the oligarch. Ivanishvili is essentially pro-Russian. And so via him, the Russians have
+      sought to control what goes on in Georgia. And Georgia, for example, has been a state through which
+      a lot of this sanctions-breaking trade has flowed. It’s one of the states. And actually the Georgia
+      model, I think is what Putin had hoped to achieve in Ukraine, was to have essentially a pro-Russian
+      oligarch in charge of the country. That’s what Yanukovych was. If you can remember back in 2014, he
+      was the president at the time of the Maidan Revolution. And that was their idea, that they would
+      control it via these proxy figures. And they have successfully done that in Georgia, even though
+      some enormous majority of Georgians want the Russians out and they don’t want Russian influence in
+      their country. But, through again, manipulation control and the use of money in politics, they’ve
+      managed to buy a lot of people off. But, you’re right. There are now front lines everywhere, inside
+      Georgia, inside Ukraine, but also inside most European countries. Again, the AFD, this is the German
+      far right party, is clearly a pro-Russian party. It’s funded in different ways by the Russians and
+      helped in different ways by the Russians. And so, that’s another front in this conflict inside
+      German politics. There’s a version of it in the United States. There’s clearly outcomes that Russia
+      would prefer in US elections, and it will try to do things to enable those to come about. And that’s
+      part of the conflict. We don’t like to see it that way. We think of our political system being
+      sovereign and outsiders don’t get a say in our elections and so on. But, that’s not how they see it.
+      And I’m not saying that they will always succeed, but they will certainly try, as they tried in
+      2016. I’m sure they tried again in 2020, less successfully. But, they will continue to try, even if
+      we don’t care whether they’re trying.
+  - speaker: Bill Kristol
+    text: |
+      And we like to see ourselves as not just sovereign, but exceptional and sort of immune almost to
+      these fights that we see in other countries. We recognize what’s happening. But, here it’s sort of,
+      well, this is America. We have the Republicans and the Democrats, and this one slightly wacky guy
+      Trump. But, come on, it’s nothing like these other countries. But maybe we should close with this
+      topic, which you addressed in the book and you’ve addressed in so many other writings too. I mean,
+      what about that though? What about the US?
+  - speaker: Anne Applebaum
+    text: |
+      So, if you look across the spectrum, if you look at last week’s European elections, there is no
+      elected political figure in a European parliament who is as radical and as extreme as Donald Trump.
+      And there were a lot of newspaper—
+  - speaker: Bill Kristol
+    text: |
+      Elected leader. Elected—
+  - speaker: Anne Applebaum
+    text: |
+      Elected. There are crazy people everywhere as but as an elected leaders there aren’t any who have
+      assaulted their parliament, their congress, who openly use violent language when they talk about
+      their enemies, who talk about abusing the justice system and using it for retribution, who describe
+      themselves in that as victims of a mysterious elite. Maybe some of the far right use this kind of
+      victim language, because that’s one of the ways in which they get people to identify with them. But,
+      there’s no one who does it with so extremist— Also, there’s nobody as incoherent as Trump. A number
+      of my colleagues have been focused on a speech he gave a few days ago in which he talked about
+      sharks. Are you familiar with the shark speech? He made a speech in which there was a whole long
+      section about sharks and electricity in the water. And something about MIT and would you rather die
+      from electrocution, or from a… It was complete gibberish. On and on. And on and on. I can’t think of
+      anybody in the western world, in the democratic world who talks in that completely incoherent
+      ranting and rambling way. And that’s not even the dangerous stuff that he does.
+  - speaker: Bill Kristol
+    text: |
+      But, I think it helps him in a weird way. It’s like he’s and interesting and amusing— He can seem to
+      be goofy and maybe too goofy to be president, one might say. But, others will say, “Well, but he
+      thought… he still knows what he’s doing. He’s a business guy.” But, it makes him seem less
+      dangerous, less threatening. I don’t actually like it when all of our friends spend too much time
+      making fun of him for all this stuff. I’m not saying he’s doing this purposely and it’s a brilliant
+      four-dimensional chess thing, but it sort of conceals the true, as you say, the really sustained and
+      pretty systematic threat to the rule of law, the institutions, the norms that he’s perfectly happy
+      to carry out and pretty conscious that he’s carrying out. Right?
+  - speaker: Anne Applebaum
+    text: |
+      He’s pretty conscious. And a really telling thing was said to me recently by a Russian journalist I
+      know who’s now in exile, who said to me that in the Kremlin … And this will take a minute to
+      explain, okay? In the Kremlin, they talk about Trump as the American Gorbachev, by which they don’t
+      mean leader of the free democracy and blah. Blah. Blah. They mean he’s the person who will take the
+      system down, because in the Kremlin, the current Kremlin, they remember Gorbachev as the person who
+      destroyed the Soviet Union. And so now, they’re betting that Trump will be the person who destroys
+      the United States, whether he makes it ungovernable, whether he assaults the institution, so that
+      they no longer function, whether he creates so much division and chaos that the US can’t have a
+      foreign policy anymore. That’s what they want, and that’s what they’re hoping he will do. And again,
+      I don’t want to be conspiratorial about how much power they have. They don’t run US elections, but
+      they will try to influence the outcome however they can, because they think he will weaken the
+      country ultimately. And, by the way, from what we know, the Chinese are only just beginning to
+      experiment in this world. From what we know the Chinese agree. So, he’s the candidate of the
+      authoritarian world, not because he’ll make America stronger, but ultimately because they think
+      he’ll make America weaker.
+  - speaker: Bill Kristol
+    text: |
+      No. That’s so important. And again, even if Russia and China aren’t very effective in their
+      interventions and their meddling, and people don’t like to think about this in America, but it turns
+      out there’s a lot of domestic support for that. Even—
+  - speaker: Anne Applebaum
+    text: |
+      Huge.
+  - speaker: Bill Kristol
+    text: |
+      It’s not just—
+  - speaker: Anne Applebaum
+    text: |
+      Oh, no. No. No. And that’s actually how they operate. They operate in conjunction with domestic
+      actors, some of whom use very similar authoritarian language, who also talk about the weakness and
+      decline and degeneracy of democracy. And the cleanliness and stability of dictatorship. You can hear
+      that in the American political debate. And that’s not necessarily Russian influence, that’s
+      Americans talking like Russians.
+  - speaker: Bill Kristol
+    text: |
+      I think some of it is also influencing them, even the Christian nationalism stuff and all that. I
+      wonder if Putin… He didn’t need us to teach him about that given Russian history and European
+      history and history in general. But, the degree to which you can appropriate these religious
+      traditions and symbols and hijack it, or distort it as a supporting populist authoritarian
+      nationalism. I don’t know.
+  - speaker: Anne Applebaum
+    text: |
+      No. No. This was a kind of co-invention. The American far-right and Putin together invented this
+      idea of some kind of pure white Christian state. In the case of Russia, to be clear, it’s absurd.
+      It’s not a white, Christian country, it’s actually a multinational state. It’s some very large
+      percentage, maybe as high as 10 or 12%, Muslim. It’s very high divorce rate. Nobody goes to church.
+      Nobody’s read the Bible. It’s very much not a Christian state. And yet Putin uses this language,
+      both somewhat for internal reasons, but also for external reasons to appeal to the American far
+      right, to appeal to some dictatorships in Africa and elsewhere, also who use this kind of language
+      of traditionalism or traditional culture as a way of dividing the public and fending off people who
+      want to talk about transparency in the rule of law.
+  - speaker: Bill Kristol
+    text: |
+      And those CPAC conferences in Budapest, they’re goofy and ridiculous in so many ways. But, it turns
+      out that the coordination across national lines of the autocrats is really… And not just the people
+      in power, but the thinkers and the publicists and the propagandists and the money. I guess I
+      underestimated that for quite a while. But, I think it’s really makes them much more powerful. And
+      certainly it makes you more powerful—you and I remember this from the past too, Thatcher and
+      Reagan—makes you more powerful internally if there’s external reinforcement for your… you know,
+      “this is not just happening here. This is happening elsewhere. This is a reform movement that’s all
+      around the world. It’s not just us, little Hungary. It’s these big places. And here’s a famous
+      American TV star. Tucker Carlson is showing up here.” And I used to mock that and think, who cares
+      if Tucker Carlson is showing up in Budapest? I really underestimated that. But, anyway.
+  - speaker: Anne Applebaum
+    text: |
+      No. No. For Orban, it’s very important. It shows I’m not isolated. I’m surrounded by friends. And
+      even though, of course, he is isolated. Inside Europe he’s an outcast. But, if Tucker Carlson comes
+      there, he can say, “Well, look how many friends I have.” So, it’s very—
+  - speaker: Bill Kristol
+    text: |
+      And they go to Mar-a-Lago, and it’s all ludicrous in a certain way. But again, if you’re looking at
+      it’s like—
+  - speaker: Anne Applebaum
+    text: |
+      No. No. It’s really important for him politically to have the American far right talking about how
+      great he is, because it helps him domestically.
+  - speaker: Bill Kristol
+    text: |
+      So, obviously people should read you in The Atlantic and elsewhere, but Autocracy, Inc.: The
+      Dictators Who Want to Run the World , that comes out what, in a month? But, it can be pre-ordered. I
+      noticed it could be pre-ordered on Amazon. So-
+  - speaker: Anne Applebaum
+    text: |
+      You can pre-order it on Amazon. You can pre-order the audio book, which I have just finished
+      recording. So—
+  - speaker: Bill Kristol
+    text: |
+      How was that?
+  - speaker: Anne Applebaum
+    text: |
+      You can hear me reading my—
+  - speaker: Bill Kristol
+    text: |
+      I’ve never done that. Is it fun or is it hard?
+  - speaker: Anne Applebaum
+    text: |
+      Of course the horrible thing is, as you’re reading it, you say, “Oh, God! That’s a terrible
+      sentence. Why didn’t I say this?” So, there’s a frustration about reading it aloud that makes you
+      feel, I wish I’d written the whole thing differently. But, it takes a few days. It’s a short book,
+      I’ll say that. So, it didn’t take me that long to read it out loud. It’s a book designed, if you’re
+      flying from the East Coast to the West coast, you can probably read it on the way. So, it’s that
+      length book.
+  - speaker: Bill Kristol
+    text: |
+      Okay. Well, after this conversation, I hope more people are compelled to read this book, because
+      it’s important. Honestly, it is the challenge, I think. Don’t you think of our time really here?
+  - speaker: Anne Applebaum
+    text: |
+      I do. I think it’s the central challenge of our time. I think it’s one that hasn’t been fully
+      articulated and understood. I think fighting it is a very nuanced and difficult and requires us to
+      think a lot, not just about foreign policy, but about domestic policy and how we approach social
+      media platforms and the financial sector. It really requires some rethinking of a lot of the ways
+      that we do things.
+  - speaker: Bill Kristol
+    text: |
+      Yeah. That’s important. Anne Applebaum, thank you for joining me today. And thank you all for
+      joining us on Conversations.

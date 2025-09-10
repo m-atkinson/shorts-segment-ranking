@@ -1,0 +1,16 @@
+{
+  "run": "dataprep_guest_v1",
+  "source_csv": "data/training-data_v4.xlsx",
+  "output_parquet": "training_guest_cleaned.parquet",
+  "rows": 68,
+  "columns": [
+    "video_id",
+    "view_count",
+    "guest_name",
+    "transcription",
+    "text",
+    "guest",
+    "guest_slug",
+    "y_log"
+  ]
+}
