@@ -309,4 +309,103 @@ for train_idx, test_idx in kfold.split(X):
 
 ---
 
-*This project demonstrates how modern NLP techniques can automate content curation tasks that traditionally required significant manual effort, achieving near-human performance in identifying engaging content segments.*
+
+Here’s a drop-in section you can paste into your `readme.md` that matches the tone/style of the doc.
+
+---
+
+## Next Steps
+
+The following upgrades focus on turning this into a ranking system that generalizes beyond guest identity, uses industry-standard evaluation, and is safer in small-data regimes.
+
+### 1) Evaluation (align with ranking use-case)
+
+* Report **NDCG\@5, MAP\@5, Recall\@5** on:
+
+  * **Leave-episode-out** (held-out videos)
+  * **Leave-guest-out** (no overlap of guest between train/test)
+  * **Time-based split** (train on older → test on newer)
+* Keep R²/Spearman as diagnostics, but headline the top-k metrics above.
+
+### 2) Proper ranking baselines
+
+* Add **pairwise** (e.g., logistic/RankSVM) and **listwise** (**LambdaMART / CatBoost Ranking**) baselines.
+* Compare against ridge; include variance across folds and statistical tests.
+
+### 3) Bias & counterfactual considerations
+
+* Document available exposure/position info (if any). Where missing, state limitations.
+* Add **propensity-weighted** evaluation or simulated debiasing to reduce position/selection bias in offline metrics.
+
+### 4) Ablations & robustness
+
+* Full ablation table:
+
+  * With vs. without **guest feature**
+  * Embedding families (MiniLM vs. E5/GTE)
+  * Chunk size/overlap sensitivity
+  * With vs. without **diversity filter**
+* Goal: demonstrate meaningful content signal even **without guest identity**.
+
+### 5) Synthetic data discipline
+
+* Cap synthetic to **≤20%** of training.
+* Always evaluate on **real-only** test folds.
+* Track performance as a function of synthetic ratio; document failure modes (over-confidence, guest skew).
+
+### 6) Objective closer to production
+
+* Move beyond raw views: add proxies for **watch-time/retention** and treat ranking as **multi-objective** (e.g., weighted blend of click proxy + retention proxy).
+* Report trade-offs (Pareto view if helpful).
+
+### 7) Scale & engineering hygiene
+
+* Batch embedding + ANN store for faster inference.
+* Reproducibility: **Hydra** configs, **Docker**, CI, and run logging (e.g., W\&B).
+* One-command repro script to recreate v5 and future versions.
+
+### 8) Human preference signal (small RLHF-style slice)
+
+* Collect a small set of **pairwise human judgments** (“A vs. B: which makes a better short?”).
+* Fit a simple **Bradley–Terry/Plackett–Luce** or a lightweight **reward model**; show it improves NDCG\@5 over view-only supervision.
+
+### 9) Interpretability pass
+
+* Ridge/embedding attribution (e.g., SHAP on pooled features or token-level saliency).
+* Small, visual report that explains *why* top segments are chosen.
+
+### 10) Public artifact
+
+* Short blog post: *“Debiased top-5: ranking short-form segments from long podcasts with proper offline metrics.”*
+* Minimal **Gradio** demo that accepts a transcript and returns top-5 with timestamps.
+
+---
+
+### Roadmap & Milestones
+
+* **v6** — Ranking-proper evaluation + baselines + ablations
+
+  * Add NDCG\@5/MAP\@5/Recall\@5 with leave-episode/guest/time splits
+  * Implement LambdaMART baseline
+  * Publish ablation table (guest off/on, embeddings, chunking, diversity)
+
+* **v7** — Debiasing + preference signal + demo
+
+  * Propensity-aware offline eval (or documented simulation)
+  * Small pairwise-preference dataset + simple reward model
+  * Gradio demo + short write-up
+
+* **v8** — Scale & reliability
+
+  * ANN store, Docker, Hydra configs, CI
+  * One-command reproduction of v6–v7 runs
+  * Interpretability report baked into `reports/`
+
+---
+
+### Quick Wins (this week)
+
+* Switch headline metrics to **NDCG\@5 / MAP\@5** and add **leave-guest-out** results.
+* Add **LambdaMART** baseline next to ridge.
+* Create `docs/bias_and_evaluation.md` summarizing evaluation protocol, debiasing assumptions, and the synthetic-data policy.
+
