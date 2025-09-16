@@ -1,14 +1,18 @@
 # use this to run the latest model
 # GuestFeat - this is the top performer
-   /Users/matthewatkinson/Desktop/032425/venv/bin/python -u runs/infer_minilm_v1/infer_minilm_v1.py \
-    --transcript data/transcript_anne-applebaum.txt \
+
+## Inference
+/Users/matthewatkinson/Apps/shorts-model_v4/data/raw/aaron-friedberg.txt 
+
+python -u shorts_model/inference/infer_minilm_v1.py \
+    --transcript data/raw/aaron-friedberg.txt  \
     --top_k 5 \
     --target_tokens 220 \
     --overlap 0.20 \
     --sim_threshold 0.85 \
     --model_name sentence-transformers/all-MiniLM-L6-v2 \
-    --regressor_path runs/train_regressor_minilm_guestfeat_v1/ridge_regressor_guestfeat_v1.pkl \
-    --guest "Anne Applebaum"
+    --regressor_path runs/v5/ridge_regressor_v5_top5rand.pkl \
+    --guest "Aaron Friedberg"
   
 
 

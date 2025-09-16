@@ -1,3 +1,5 @@
+# this is for cleaning up transcripts that are in .yaml
+
 import re
 from dataclasses import dataclass
 from typing import Optional, Tuple, Any, List

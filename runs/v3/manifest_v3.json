@@ -1,0 +1,19 @@
+{
+  "run": "train_regressor_minilm_guestfeat_v1",
+  "csv": "data/processed/training-data_v4.1_w-o-outlier.csv",
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "alpha": 1.0,
+  "dim": 384,
+  "device": "mps",
+  "cv": {
+    "folds": 5,
+    "seed": 42,
+    "r2_mean": 0.17664068736868865,
+    "r2_std": 0.264895545418478,
+    "spearman_mean": 0.5916483516483517,
+    "spearman_std": 0.10228307915588239
+  },
+  "artifacts": {
+    "regressor": "ridge_regressor_v3.pkl"
+  }
+}
