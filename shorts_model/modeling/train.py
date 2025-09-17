@@ -43,6 +43,83 @@ def compute_guest_means(y: np.ndarray, guests: pd.Series):
     return means, global_mean
 
 
+def ndcg_at_k(y_true: np.ndarray, y_pred: np.ndarray, k: int = 5) -> float:
+    """Compute NDCG@k for ranking evaluation."""
+    if len(y_true) == 0:
+        return 0.0
+    
+    k = min(k, len(y_true))
+    
+    # Sort by predicted scores (descending)
+    order = np.argsort(y_pred)[::-1]
+    y_true_sorted = y_true[order]
+    
+    # DCG@k
+    discounts = np.log2(np.arange(k) + 2)  # +2 because log2(1) = 0
+    dcg = np.sum(y_true_sorted[:k] / discounts)
+    
+    # IDCG@k (ideal ranking)
+    y_true_ideal = np.sort(y_true)[::-1]
+    idcg = np.sum(y_true_ideal[:k] / discounts)
+    
+    return dcg / idcg if idcg > 0 else 0.0
+
+
+def map_at_k(y_true: np.ndarray, y_pred: np.ndarray, k: int = 5) -> float:
+    """Compute MAP@k for ranking evaluation."""
+    if len(y_true) == 0:
+        return 0.0
+    
+    k = min(k, len(y_true))
+    
+    # Convert to binary relevance (above median = relevant)
+    threshold = np.median(y_true)
+    y_binary = (y_true >= threshold).astype(int)
+    
+    if np.sum(y_binary) == 0:
+        return 0.0
+    
+    # Sort by predicted scores
+    order = np.argsort(y_pred)[::-1]
+    y_binary_sorted = y_binary[order]
+    
+    # Compute AP@k
+    precisions = []
+    num_relevant = 0
+    for i in range(k):
+        if y_binary_sorted[i] == 1:
+            num_relevant += 1
+            precision = num_relevant / (i + 1)
+            precisions.append(precision)
+    
+    return np.mean(precisions) if precisions else 0.0
+
+
+def recall_at_k(y_true: np.ndarray, y_pred: np.ndarray, k: int = 5) -> float:
+    """Compute Recall@k for ranking evaluation."""
+    if len(y_true) == 0:
+        return 0.0
+    
+    k = min(k, len(y_true))
+    
+    # Convert to binary relevance (above median = relevant)
+    threshold = np.median(y_true)
+    y_binary = (y_true >= threshold).astype(int)
+    
+    total_relevant = np.sum(y_binary)
+    if total_relevant == 0:
+        return 0.0
+    
+    # Sort by predicted scores
+    order = np.argsort(y_pred)[::-1]
+    y_binary_sorted = y_binary[order]
+    
+    # Count relevant items in top-k
+    relevant_in_topk = np.sum(y_binary_sorted[:k])
+    
+    return relevant_in_topk / total_relevant
+
+
 # ... keep your imports and code above unchanged ...
 
 def main():
@@ -84,6 +161,8 @@ def main():
     # CV with leakage-safe target encoding
     splits = kfold_indices(len(df), n_splits=5, seed=SEED)
     r2s, rhos = [], []
+    ndcgs, maps, recalls = [], [], []  # Add ranking metrics
+    
     for tr, te in splits:
         tr_means, tr_global = compute_guest_means(y_log[tr], df.iloc[tr]["guest"]) 
         # Build 1-D guest feature using train means
@@ -95,8 +174,15 @@ def main():
         reg = Ridge(alpha=ALPHA)
         reg.fit(X_tr, y_log[tr])
         y_pred = reg.predict(X_te)
+        
+        # Existing regression metrics
         r2s.append(float(reg.score(X_te, y_log[te])))
         rhos.append(float(spearmanr(y_log[te], y_pred).correlation))
+        
+        # Add ranking metrics
+        ndcgs.append(ndcg_at_k(y_log[te], y_pred, k=5))
+        maps.append(map_at_k(y_log[te], y_pred, k=5))
+        recalls.append(recall_at_k(y_log[te], y_pred, k=5))
 
     # Train final model with full guest means
     full_means, full_global = compute_guest_means(y_log, df["guest"]) 
@@ -132,6 +218,11 @@ def main():
     lines.append(f"- R^2 mean ± std: {np.mean(r2s):.3f} ± {np.std(r2s):.3f}")
     lines.append(f"- Spearman mean ± std: {np.mean(rhos):.3f} ± {np.std(rhos):.3f}")
     lines.append("")
+    lines.append("## Ranking metrics (k=5)\n")
+    lines.append(f"- NDCG@5 mean ± std: {np.mean(ndcgs):.3f} ± {np.std(ndcgs):.3f}")
+    lines.append(f"- MAP@5 mean ± std: {np.mean(maps):.3f} ± {np.std(maps):.3f}")
+    lines.append(f"- Recall@5 mean ± std: {np.mean(recalls):.3f} ± {np.std(recalls):.3f}")
+    lines.append("")
     lines.append("## Artifacts\n")
     lines.append(f"- Regressor: {reg_path.name}")
     lines.append("- Guest means embedded in pickle (guest_means, guest_global_mean) for inference")
@@ -151,6 +242,12 @@ def main():
             "r2_std": float(np.std(r2s)),
             "spearman_mean": float(np.mean(rhos)),
             "spearman_std": float(np.std(rhos)),
+            "ndcg_at_5_mean": float(np.mean(ndcgs)),
+            "ndcg_at_5_std": float(np.std(ndcgs)),
+            "map_at_5_mean": float(np.mean(maps)),
+            "map_at_5_std": float(np.std(maps)),
+            "recall_at_5_mean": float(np.mean(recalls)),
+            "recall_at_5_std": float(np.std(recalls)),
         },
         "artifacts": {
             "regressor": reg_path.name,
