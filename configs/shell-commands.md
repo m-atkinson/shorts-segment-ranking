@@ -18,8 +18,15 @@ python -u shorts_model/inference/infer_minilm_v1.py \
 
 # Train model - this will overwrite current run BTW, so create a copy beforehand
 
-python train_guest_regressor.py --csv data/training-data_v5.csv
 
+
+python shorts_model/modeling/train.py \
+    --csv data/processed/training-data_v4.3_with-pseudo.csv \
+    --outdir runs/v6 \
+    --name v6 #", default="guestfeat_v1", help="Name stem to use in output filenames (e.g., run1)")
+
+# Old train model
+python train_guest_regressor.py --csv data/training-data_v5.csv
 
 
 
