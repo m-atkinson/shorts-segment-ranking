@@ -6,8 +6,6 @@ A ranking assistant that proposes diverse, high-potential segments from long-for
 
 This project addresses the challenge of scaling short-form content creation from long-form podcasts, specifically the time an editor spends searching for segments to create shorts. 
 
-**Key Achievement**: The current model (v5) achieves **R² = 0.767** and **Spearman correlation = 0.896** on actual YouTube Shorts performance data. Ranking evaluation shows **NDCG@5 = 0.991**, indicating excellent performance at identifying top-5 segments.
-
 ## Problem Statement
 
 - **Input**: Hour-long podcast transcripts (e.g., "Conversations with Bill Kristol")
@@ -58,7 +56,7 @@ Diversity-Aware Selection (top-5)
 
 ## Performance Metrics
 
-### Model Performance (v5)
+### v5 cross-validated performance (mixed real + synthetic, 5-fold)
 - **R² Score**: 0.767 ± 0.054 (explains 76.7% of variance)
 - **Spearman Correlation**: 0.896 ± 0.026 (excellent ranking quality)
 - **NDCG@5**: 0.991 ± 0.009 (ranking performance at top-5)
@@ -133,6 +131,22 @@ python3 shorts_model/features/synthdata_v1/generate_synth_batch_v1.py \
     --output_stem data/interim/synth_batch_new
 ```
 
+### Real-only holdout evaluation (v6 harness)
+Train on real+synthetic while holding out a fraction of real rows the model never sees (no leakage). Reports R², Spearman, and guest-averaged NDCG@5/MAP@5/Recall@5 on the held-out real set.
+
+```bash
+python3 shorts_model/modeling/train_holdout_real.py \
+    --train_csv data/processed/training-data_v4.3_with-pseudo.csv \
+    --real_csv  data/processed/training-data_v4.1_w-o-outlier.csv \
+    --holdout_frac 0.2 \
+    --outdir runs/v6 \
+    --name v6_holdout_real
+```
+
+Notes:
+- If the holdout ends up with too few guests, increase --holdout_frac or move to leave-guest-out evaluation for a more robust read.
+- Cross-validated (mixed) metrics and real-only holdout metrics are not directly comparable; the latter is closer to “truth on unseen real data”.
+
 ## Example Output
 
 ### Inference Report
@@ -161,7 +175,8 @@ that they can't win..."
 - **v2**: Added guest name as categorical feature (R² ~0.4)
 - **v3**: Guest target encoding with cross-validation (R² ~0.5)
 - **v4**: Synthetic data augmentation (R² 0.524 ± 0.200)
-- **v5**: Improved synthetic data quality (R² 0.767 ± 0.054) ✅ **Current**
+- **v5**: Improved synthetic data quality (R² 0.767 ± 0.054)
+- **v6**: Added real-only holdout evaluation harness (train_holdout_real.py)
 
 ### Key Innovations
 1. **Guest-Aware Modeling**: Recognition that guest identity is the strongest predictor
@@ -315,13 +330,6 @@ for train_idx, test_idx in kfold.split(X):
 - **GPU**: Optional (MPS on Apple Silicon supported)
 - **Processing Speed**: ~50 chunks per second on M1 MacBook Pro
 
----
-
-
-Here’s a drop-in section you can paste into your `readme.md` that matches the tone/style of the doc.
-
----
-
 ## Next Steps
 
 The following upgrades focus on turning this into a ranking system that generalizes beyond guest identity, uses industry-standard evaluation, and is safer in small-data regimes.
@@ -412,6 +420,7 @@ The following upgrades focus on turning this into a ranking system that generali
 ### Quick Wins
 
 * ✅ **Added NDCG@5 / MAP@5 / Recall@5** to training pipeline for comprehensive ranking evaluation
+* Use the **real-only holdout evaluator** to report “real-only” performance; increase --holdout_frac or adopt leave-guest-out to include more guests
 * Add **LambdaMART** baseline next to ridge
 * Add **leave-guest-out** validation splits for more robust evaluation
 * Create `docs/bias_and_evaluation.md` summarizing evaluation protocol and synthetic-data policy
