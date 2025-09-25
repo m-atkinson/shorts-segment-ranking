@@ -68,8 +68,11 @@ python3 shorts_model/inference/infer_minilm_v1.py \
     --transcript data/raw/transcript_example.txt \
     --regressor_path runs/archive/v5/ridge_regressor_v5_top5rand.pkl \
     --guest "Anne Applebaum" \
-    --top_k 5
+    --top_k 5 \
+    --outdir inference
 ```
+
+Outputs are written to inference/ by default (override with --outdir).
 
 ### Running Tests
 ```bash
