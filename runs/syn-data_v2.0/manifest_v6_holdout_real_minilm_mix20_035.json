@@ -1,0 +1,27 @@
+{
+  "run": "v6_holdout_real_minilm_mix20_035",
+  "train_csv": "data/processed/training-data_mix_20.csv",
+  "real_csv_pool": "data/processed/training-data_v5.1_w-o-outlier.csv",
+  "holdout_frac": 0.35,
+  "sizes": {
+    "train": 66,
+    "test": 26
+  },
+  "global_metrics": {
+    "r2": 0.5683722849724179,
+    "spearman": 0.7654700854700854
+  },
+  "ranking_metrics": {
+    "ndcg_at_5_mean": 0.9884346029570948,
+    "ndcg_at_5_std": 0.020247826262524252,
+    "map_at_5_mean": 0.842063492063492,
+    "map_at_5_std": 0.20078894529902733,
+    "recall_at_5_mean": 1.0,
+    "recall_at_5_std": 0.0,
+    "n_guests_evaluated": 7
+  },
+  "artifacts": {
+    "regressor": "ridge_regressor_v6_holdout_real_minilm_mix20_035.pkl",
+    "report": "training_report_v6_holdout_real_minilm_mix20_035.md"
+  }
+}

@@ -66,7 +66,7 @@ python3 shorts_model/modeling/train.py \
 # Current best model (v5)
 python3 shorts_model/inference/infer_minilm_v1.py \
     --transcript data/raw/transcript_example.txt \
-    --regressor_path runs/v5/ridge_regressor_v5_top5rand.pkl \
+    --regressor_path runs/archive/v5/ridge_regressor_v5_top5rand.pkl \
     --guest "Anne Applebaum" \
     --top_k 5
 ```
@@ -139,13 +139,21 @@ for train_idx, test_idx in kfold.split(X):
 
 ## Synthetic Data Generation
 
-The system includes a sophisticated synthetic data generation pipeline:
+Updated approach focused on high‑quality, model‑relevant positives, with clear provenance and auditability.
 
-- **Purpose**: Augment small training dataset (212 real examples)
-- **Method**: Self-bootstrap using trained models to score unlabeled transcripts
-- **Quality Control**: Only selects top 25th percentile scoring segments
-- **Diversity**: Maximum 2 segments per transcript, cosine similarity deduplication
-- **Caution**: Keep synthetic data <20% of training set to prevent "drinking own Kool-Aid"
+- Purpose: Augment the small real dataset with additional, high‑signal training rows derived from long‑form transcripts.
+- Scoring model: Use the current best ridge regressor (guest‑aware) to score chunks; optionally run a second scorer (e.g., EmbeddingGemma+prompt) and combine scores (mean or max) to reduce single‑model bias.
+- Per‑transcript selection: Rank all chunks for a transcript and take the top‑5 candidates (post diversity filter), then randomly select the final keep set from those top candidates. This preserves quality while avoiding over‑fitting to a single deterministic pick.
+- Diversity: Apply cosine‑similarity filtering when building the per‑transcript top‑5 (e.g., sim ≤ 0.85) to avoid near‑duplicates.
+- Validation (strict, YAML): Verify that the emitted chunk text is present in the source transcript (whitespace‑insensitive match after normalization). Rows failing validation are dropped.
+- Guest attribution: Infer/confirm guest per transcript (from YAML metadata or speaker heuristic) and pass guest to the scorer so guest‑aware features are used consistently.
+- Output format: Emit training‑ready CSV rows with columns: `video_id`, `view_count` (pred from log via expm1), `guest_name`, `transcription`.
+- Provenance: Store source file name, chunk_id, model_name, and timestamp in an internal manifest for traceability (optional alongside the CSV).
+
+Notes and options:
+- Committee scoring (optional): Average or max across multiple scorers (e.g., MiniLM and Gemma) before ranking to reduce model‑specific artifacts.
+- Balancing (optional): If desired, sample uniformly across transcripts/guests when choosing from the per‑transcript top‑5 to avoid over‑representing frequent guests.
+- Ratio policy: The synthetic/real ratio is a tuning knob, not fixed in this doc. Use ablations on a frozen real‑only holdout to choose the ratio that improves ranking metrics (MAP@5) without hurting robustness.
 
 ## Guest Performance Insights
 

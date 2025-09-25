@@ -20,7 +20,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import numpy as np
 import pandas as pd
@@ -28,13 +28,13 @@ from scipy.stats import spearmanr
 from sklearn.linear_model import Ridge
 
 # Local copies of training utilities to avoid package import issues
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+DEFAULT_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 BATCH_SIZE = 128
 SEED = 42
 ALPHA = 1.0
 
 
-def embed_texts(texts, model_name: str):
+def embed_texts(texts, model_name: str, prompt: str | None = None):
     device = "cpu"
     try:
         import torch
@@ -44,7 +44,10 @@ def embed_texts(texts, model_name: str):
         pass
     from sentence_transformers import SentenceTransformer
     model = SentenceTransformer(model_name, device=device)
-    emb = model.encode(texts, batch_size=BATCH_SIZE, convert_to_numpy=True, normalize_embeddings=False, show_progress_bar=True)
+    kwargs = dict(batch_size=BATCH_SIZE, convert_to_numpy=True, normalize_embeddings=False, show_progress_bar=True)
+    if prompt:
+        kwargs["prompt"] = prompt
+    emb = model.encode(texts, **kwargs)
     return emb, emb.shape[1], device
 
 
@@ -132,8 +135,10 @@ def main():
     ap.add_argument("--train_csv", required=True, help="CSV with real+synthetic (e.g., v4.3_with-pseudo)")
     ap.add_argument("--real_csv", required=True, help="CSV with real-only rows (e.g., v4.1_w-o-outlier)")
     ap.add_argument("--holdout_frac", type=float, default=0.2, help="Fraction of real rows to hold out")
-    ap.add_argument("--outdir", default="runs/v6", help="Output directory")
+    ap.add_argument("--outdir", default="runs/syn-data_v2.0", help="Output directory")
     ap.add_argument("--name", default="v6_holdout_real", help="Run name")
+    ap.add_argument("--model_name", default=DEFAULT_MODEL_NAME, help="Embedding model id (e.g., sentence-transformers/all-MiniLM-L6-v2 or google/embeddinggemma-300M)")
+    ap.add_argument("--prompt", default="", help="Optional embedding prompt (EmbeddingGemma supports prompts)")
     args = ap.parse_args()
 
     outdir = Path(args.outdir).expanduser().resolve()
@@ -168,8 +173,8 @@ def main():
     y_test = np.log1p(df_test["view_count"].astype(float)).values
 
     # Embed
-    emb_train, dim, device = embed_texts(df_train["text"].tolist(), MODEL_NAME)
-    emb_test, _, _ = embed_texts(df_test["text"].tolist(), MODEL_NAME)
+    emb_train, dim, device = embed_texts(df_train["text"].tolist(), args.model_name, prompt=(args.prompt or None))
+    emb_test, _, _ = embed_texts(df_test["text"].tolist(), args.model_name, prompt=(args.prompt or None))
 
     # Guest means from TRAIN ONLY (leakage-safe)
     means, global_mean = compute_guest_means(y_train, df_train["guest"])
@@ -199,10 +204,11 @@ def main():
         import pickle
         pickle.dump({
             "regressor": reg,
-            "model_name": MODEL_NAME,
+"model_name": args.model_name,
             "model_dim": dim,
             "alpha": ALPHA,
-            "device": device,
+"device": device,
+            "prompt": args.prompt or "",
             "guest_means": means,
             "guest_global_mean": global_mean,
             "features": "embedding + guest_mean_log_views",
@@ -216,6 +222,7 @@ def main():
     lines.append(f"Train CSV: {args.train_csv}")
     lines.append(f"Real CSV (pool): {args.real_csv}")
     lines.append(f"Holdout fraction (of real): {args.holdout_frac}")
+    lines.append(f"Model: {args.model_name} | Prompt: {args.prompt if args.prompt else '<none>'}")
     lines.append("")
     lines.append(f"Train size: {len(df_train)} (real={int(df_train['video_id'].isin(real_ids).sum())}, synth/other={int((~df_train['video_id'].isin(real_ids)).sum())})")
     lines.append(f"Test size (real only): {len(df_test)}")

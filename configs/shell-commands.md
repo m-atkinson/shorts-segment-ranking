@@ -11,7 +11,7 @@ python -u shorts_model/inference/infer_minilm_v1.py \
     --overlap 0.20 \
     --sim_threshold 0.85 \
     --model_name sentence-transformers/all-MiniLM-L6-v2 \
-    --regressor_path runs/v5/ridge_regressor_v5_top5rand.pkl \
+    --regressor_path runs/archive/v5/ridge_regressor_v5_top5rand.pkl \
     --guest "Aaron Friedberg"
   
 
@@ -22,7 +22,7 @@ python -u shorts_model/inference/infer_minilm_v1.py \
 
 python shorts_model/modeling/train.py \
     --csv data/processed/training-data_v4.3_with-pseudo.csv \
-    --outdir runs/v6 \
+    --outdir runs/syn-data_v2.0 \
     --name v6 #", default="guestfeat_v1", help="Name stem to use in output filenames (e.g., run1)")
 
 # Old train model
