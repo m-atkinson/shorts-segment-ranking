@@ -117,7 +117,7 @@ python3 shorts_model/modeling/train.py \
 ```bash
 python3 shorts_model/inference/infer_minilm_v1.py \
     --transcript data/raw/transcript_example.txt \
-    --regressor_path runs/v5/ridge_regressor_v5_top5rand.pkl \
+    --regressor_path runs/archive/v5/ridge_regressor_v5_top5rand.pkl \
     --guest "Anne Applebaum" \
     --top_k 5
 ```
@@ -126,9 +126,21 @@ python3 shorts_model/inference/infer_minilm_v1.py \
 ```bash
 python3 shorts_model/features/synthdata_v1/generate_synth_batch_v1.py \
     --yaml_dir data/raw/transcripts \
-    --regressor_path runs/v5/ridge_regressor_v5_top5rand.pkl \
+    --regressor_path runs/archive/v5/ridge_regressor_v5_top5rand.pkl \
     --model_name sentence-transformers/all-MiniLM-L6-v2 \
     --output_stem data/interim/synth_batch_new
+```
+
+#### Create mixed training sets (real + synthetic)
+```bash
+python3 shorts_model/make_training_mixes.py \
+    --real_csv  data/processed/training-data_v5.1_w-o-outlier.csv \
+    --synth_csv data/interim/synth_batch_v6_top5.csv \
+    --counts    200 \
+    --seed      42 \
+    --outdir    data/processed \
+    --prefix    training-data_v7
+# Example output: data/processed/training-data_v7_abs200.csv
 ```
 
 ### Real-only holdout evaluation (v6 harness)
@@ -139,13 +151,61 @@ python3 shorts_model/modeling/train_holdout_real.py \
     --train_csv data/processed/training-data_v4.3_with-pseudo.csv \
     --real_csv  data/processed/training-data_v4.1_w-o-outlier.csv \
     --holdout_frac 0.2 \
-    --outdir runs/v6 \
+    --outdir runs/syn-data_v2.0 \
     --name v6_holdout_real
 ```
 
 Notes:
 - If the holdout ends up with too few guests, increase --holdout_frac or move to leave-guest-out evaluation for a more robust read.
 - Cross-validated (mixed) metrics and real-only holdout metrics are not directly comparable; the latter is closer to “truth on unseen real data”.
+
+## Synthetic data experiments (v6/v7) — current status
+
+Directory changes
+- runs/syn-data_v1.0 — contains the original v6_holdout_real run (0.2 real-only holdout)
+- runs/syn-data_v2.0 — v6 real-only holdout harness reruns and synthetic mix experiments (0.35 holdout)
+- runs/syn-data_v2.1 — v7 experiment with larger synthetic volume
+- runs/archive — previous v3/v4/v5 runs and artifacts (including the v5 regressor)
+
+v6 baseline (MiniLM, real-only holdout 0.35)
+- R²: 0.654
+- Spearman: 0.756
+- NDCG@5: 0.991 ± 0.014
+- MAP@5: 0.833 ± 0.204
+- Recall@5: 1.000 ± 0.000
+
+v6 synthetic mixes (MiniLM, real-only holdout 0.35)
+- mix10: R² 0.560, Spearman 0.755, NDCG@5 0.988 ± 0.020, MAP@5 0.842 ± 0.201, Recall@5 1.000
+- mix20: R² 0.568, Spearman 0.765, NDCG@5 0.988 ± 0.020, MAP@5 0.842 ± 0.201, Recall@5 1.000
+- mix30: R² 0.570, Spearman 0.768, NDCG@5 0.988 ± 0.021, MAP@5 0.850 ± 0.213, Recall@5 1.000
+- mix40: R² 0.630, Spearman 0.798, NDCG@5 0.991 ± 0.015, MAP@5 0.882 ± 0.177, Recall@5 1.000
+
+v6_holdout_real (MiniLM, real-only holdout 0.2; small guest count)
+- R²: 0.341, Spearman: 0.582
+- NDCG@5/MAP@5/Recall@5 = 1.000 ± 0.000 (n_guests_evaluated = 2) — saturated due to too few guests; not representative
+
+v7 results (MiniLM, real-only holdout 0.35; 200 synthetic added)
+- Training data: 77 real + 200 synthetic = 277 rows; train=251 (real=51), test=26 (real-only)
+- R²: 0.664
+- Spearman: 0.874
+- NDCG@5: 0.999 ± 0.003
+- MAP@5: 0.972 ± 0.068
+- Recall@5: 1.000 ± 0.000
+- Report: runs/syn-data_v2.1/training_report_v7_holdout_real_minilm_synth200_035.md
+
+What we did
+- Generated a fresh synthetic pool (v7): per_transcript_top_k=10, keep=10, diversity_sim_threshold=0.85, dedup_cosine=0.95, min_tokens=25
+- Candidates: 2,719; strict validation rejected 180; selected 290 rows
+- Built mixed training sets, including data/processed/training-data_v7_abs200.csv
+- Trained with a frozen real-only holdout (0.35) to measure generalization on real data
+
+What we found
+- Compared to the v6 baseline, the v7 run with 200 synthetic rows improved Spearman and MAP@5 substantially, with a modest R² gain
+- Very small real-only holdouts can yield saturated ranking metrics due to too few guests — increase holdout or use leave-guest-out for robustness
+
+Where we are
+- Latest run (v7, syn-data_v2.1) is our strongest to date on the real-only holdout metrics
+- Next: optionally probe 300–400 synthetic rows, add leave-guest-out/time-based splits, and validate stability of gains
 
 ## Example Output
 

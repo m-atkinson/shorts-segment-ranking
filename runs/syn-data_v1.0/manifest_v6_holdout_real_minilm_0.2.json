@@ -1,0 +1,27 @@
+{
+  "run": "v6_holdout_real",
+  "train_csv": "data/processed/training-data_v4.3_with-pseudo.csv",
+  "real_csv_pool": "data/processed/training-data_v4.1_w-o-outlier.csv",
+  "holdout_frac": 0.2,
+  "sizes": {
+    "train": 199,
+    "test": 13
+  },
+  "global_metrics": {
+    "r2": 0.34130245763386635,
+    "spearman": 0.5824175824175823
+  },
+  "ranking_metrics": {
+    "ndcg_at_5_mean": 1.0,
+    "ndcg_at_5_std": 0.0,
+    "map_at_5_mean": 1.0,
+    "map_at_5_std": 0.0,
+    "recall_at_5_mean": 1.0,
+    "recall_at_5_std": 0.0,
+    "n_guests_evaluated": 2
+  },
+  "artifacts": {
+    "regressor": "ridge_regressor_v6_holdout_real.pkl",
+    "report": "training_report_v6_holdout_real.md"
+  }
+}

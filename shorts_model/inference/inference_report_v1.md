@@ -2,7 +2,7 @@
 
 Transcript: data/raw/aaron-friedberg.txt
 Model: sentence-transformers/all-MiniLM-L6-v2
-Regressor: runs/v5/ridge_regressor_v5_top5rand.pkl
+Regressor: runs/archive/v5/ridge_regressor_v5_top5rand.pkl
 Chunks: 63 | Target tokens: 220 | Overlap: 0.2
 
 ## Top candidates
