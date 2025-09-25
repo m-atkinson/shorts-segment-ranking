@@ -28,9 +28,11 @@ def main():
     ap.add_argument("--model_name", default="sentence-transformers/all-MiniLM-L6-v2")
     ap.add_argument("--regressor_path", default="runs/train_regressor_minilm_v1/ridge_regressor_v1.pkl")
     ap.add_argument("--guest", default="", help="Guest name for guest-aware models (optional)")
+    ap.add_argument("--outdir", default="inference", help="Directory to write inference outputs (reports, JSONL)")
     args = ap.parse_args()
 
-    here = Path(__file__).resolve().parent
+    outdir = Path(args.outdir).resolve()
+    outdir.mkdir(parents=True, exist_ok=True)
 
     # Parse and chunk
     utterances = read_transcript(args.transcript)
@@ -49,7 +51,8 @@ def main():
     selected = topk_with_diversity(chunks, embeddings, scores, k=args.top_k, sim_threshold=args.sim_threshold)
 
     # Write report and JSONL of all chunks
-    report_md = here / "inference_report_v1.md"
+    tstem = Path(args.transcript).stem
+    report_md = outdir / f"inference_report_{tstem}_top5.md"
     lines = []
     lines.append("# Inference Report (v1)\n")
     lines.append(f"Transcript: {args.transcript}")
@@ -70,7 +73,7 @@ def main():
         lines.append("")
     report_md.write_text("\n".join(lines))
 
-    all_jsonl = here / "all_chunks_v1.jsonl"
+    all_jsonl = outdir / f"all_chunks_{tstem}.jsonl"
     with all_jsonl.open("w", encoding="utf-8") as f:
         for ch, sc in zip(chunks, scores):
             obj = {
