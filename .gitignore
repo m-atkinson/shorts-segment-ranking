@@ -50,3 +50,8 @@ transformers_cache/
 # Local configuration overrides
 *.local.*
 
+
+# Ignore generated artifacts from pipeline
+runs/
+inference/
+reports/dependency_graph.svg
